@@ -1,0 +1,40 @@
+.container{
+    border: 3px solid #000;
+}
+.row{
+    border: 3px solid red;
+}
+.col{
+    border: 1px solid yellow;
+}
+
+.orange{
+    border: 1px solid yellow;
+    background: orange;
+}
+.pink{
+    border: 1px solid yellow;
+    background: pink;
+
+}
+ .blue{
+    border: 1px solid yellow;
+    background: blue;
+
+ }
+ .yellowgreen{
+    border: 1px solid yellow;
+    background: yellowgreen;
+ }
+ .lightsalmon{
+    border: 1px solid yellow;
+    background:lightsalmon ;
+ }
+ .gold{
+    border: 1px solid yellow;
+    background:gold ;
+ }
+ .lightgreen{
+    border: 1px solid yellow;
+    background:lightgreen ;
+ }

@@ -1,0 +1,50 @@
+.container{
+    border:0 solid black;
+}
+
+.row{
+    border: 0 solid red;
+}
+.col,.col-1,.col-2,.col-3,.col-4,.col-5,.col-6,.col-7,.col-8,.col-9,.col-10,.col-11,.col-12{
+    border: 0 solid green;
+}
+
+body{
+    background: gray;
+}
+
+#header{
+background: lightblue;
+padding: 10px 0 10px 10px;
+}
+#menu{
+    background: lightcoral;
+    padding: 3px 0;
+
+
+}
+#menu ul{
+    list-style: none;
+    margin: 0;
+
+}
+
+#menu ul li{
+    display: inline-block;
+}
+#menu ul li  a{
+    text-decoration: none;
+}
+#content{
+    background: white;
+   
+    
+}
+#sidebar{
+    background: lightgreen;
+
+}
+#footer{
+    background: lightcyan;
+
+}

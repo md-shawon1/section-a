@@ -1,0 +1,289 @@
+
+a:hover{
+    text-decoration: none;
+}
+
+.section{
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+.section h2.section-head{
+    color: #000;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section h2.section-head:after{
+    content: "";
+    background: #e74c3c;
+    display: block;
+    width: 0;
+    height: 0;
+    margin: 10px auto;
+    transition: 0.4s;
+}
+.section h2.section-head:hover::after{
+    width: 300px;
+    height: 3px;
+}
+
+
+/*css for heading starts here*/
+#header{
+    color:#fff;
+    background: #e74c3c;
+}
+
+     
+#logo{
+    font-size: 1.4rem;
+    margin-top: 7px;
+}
+#menu{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+#menu li{
+    display: inline-block;
+}
+#menu li a{
+    color: #fff;
+    display: block;
+    padding: 10px 8px;
+}
+#menu li a:hover{
+    background:#c0392b;
+} 
+/*css for heading ends here*/
+
+
+
+/*css for banner starts here*/
+
+#banner{
+    background: url("../images/main.jpg") no-repeat 0 0;
+    background-size: cover;
+}
+.banner-title h1{
+    background: rgba(255,255,255,0.8);
+    display: inline-block;
+    padding: 10px;
+    margin: 0;
+}
+
+.banner-title p.lead{
+    color: #fff;
+    background: rgba(231, 76, 60,0.7);
+    padding: 10px;
+}
+.banner-title{
+    padding-top: 5rem;
+}
+
+/*service-box css starts here*/
+.service-box{
+    text-align: center;
+
+}
+.service-box i.fa{
+    color:#e74c3c ;
+    font-size: 80px;
+    margin-bottom: 13px;
+}
+
+
+/*service-box css ends here*/
+
+/*testimonial css starts here*/
+
+#testimonials{
+    color: #fff;
+    background: url("../images/mobile.jpg") no-repeat 0 0;
+    background-size: cover;
+    padding: 50px 0;
+    position: relative;
+
+}
+#testimonials:before{
+    background:rgba(52, 73, 94,0.5);
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+.testimonial img{
+    border-radius: 50%;
+}
+
+
+/*testimonial css ends here*/
+
+
+/*newspost css starts here*/
+
+.news-post img{
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.news-post h3{
+    font-size: 1.35rem;
+}
+.news-post h3 a{
+    color:#e74c3c;
+}
+
+
+.post-date{
+    font-size: 13px;
+    margin-bottom: 2px;
+}
+.post-date:before{
+    content: "\f073";
+    font-family: FontAwesome;
+    padding-right: 5px;
+   
+}
+a.readmore{
+    font-size: 15px;
+    color: #e74c3c;
+    background: chartreuse;
+    padding: 3px;
+
+}
+a.readmore::after{
+    content: "\f101";
+    font-family: fontawesome;
+    padding-left: 5px;
+
+}
+a.readmore:hover{
+    background: #000;
+    display: block;
+    padding: 5px;
+}
+
+/*newspost css ends here*/
+
+/*footer css ends here*/
+
+#footer-sidebar{
+    color: #fff;
+    background:#34495e;
+    padding: 20px 0;
+}
+.footer-widget h4:after{
+    content: "";
+    background:#fff;
+    display: block;
+    width: 0;
+    height: 0;
+    margin: 4px 0;
+    transition: 0.4s;
+
+}
+.footer-widget h4:hover::after{
+    width: 150px;
+    height: 2px;
+}
+
+.footer-widget a{
+    color: #fff;
+}
+.latest-news{
+    padding: 0;margin: 0;
+    list-style: none;
+    margin-bottom: 3px;
+}
+
+.latest-news li:before{
+    content: "\f101";
+    font-family: fontawesome;
+    padding-right: 5px;
+   
+}
+
+
+/*footer css ends here*/
+
+#footer{
+    color: #fff;
+    background: #2c3e50;
+    padding: 10px 0;
+}
+#social-icons{
+    color: #fff;
+    margin: 0;
+    padding: 0;
+   
+    list-style: none;
+}
+
+#social-icons li{
+    display: inline-block;
+    padding-left: 5px;
+}
+#social-icons li a{
+    color: #fff;
+    font-size: 23px;
+}
+
+
+
+
+/*media query starts*/
+@media (max-width:990px){
+    .news-post{
+        margin-bottom: 30px;
+    }
+
+}
+
+
+@media (max-width:768px){
+    #logo{
+        text-align: center;
+        margin: 10px 0;
+    }
+    #menu{
+        text-align: center;
+    }
+    .section{
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .banner-title{
+        padding-top: 0;
+    }
+    .banner-title h1{
+        font-size: 1.6rem;
+        background: rgba(255,255,255,0.4);
+        font-weight: bold;
+    }
+    .banner-title p{
+        font-size: 1rem;
+    }
+    .banner-title p.lead{
+        background: rgba(231, 76, 60,0.3);
+        font-weight: bold;
+    }
+
+    .testimonial{
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    .footer-widget{
+        margin-bottom: 20px;
+    }
+    #footer{
+        text-align: center;
+    }
+    .service-box{
+        margin-bottom: 40px;
+    }
+ 
+
+  
+}
