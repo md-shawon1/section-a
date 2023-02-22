@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/template-design.css">
 </head>
 <body>
+    
     <!--header starts from here-->
     <div id="header">
         <div class="container">
@@ -29,6 +30,9 @@
         </div>
     </div>
   <!--header ends here-->
+      <marquee id="mar" direction="right" height="100%" style="background-color: black; color: white;font-size:30px;height:100vh;padding-top: 50px;">
+        Happy Birthday
+ </marquee>
 
     <!--banner part starts from here-->
     <div id="banner" class="py-5">
@@ -239,6 +243,88 @@
      </div>
      <!--footerlast ends here-->
 
+    
+    
+  
+
+
+    <script>
+
+        swal({
+            title: 'Assalamu Alaikum',
+            text:'Are you tanjila alam riha?',
+            icon:'info',
+            buttons:['NO','Yes'],
+            dangerMode:true
+        }).then(value=>{
+          if(value ==true){
+            swal({
+            title: 'Happy Birthday',
+            text:'Congratulations on enjoying all these days',
+            icon:'success',
+            buttons:['So What','Thank You'],
+            dangerMode:true
+        }).then(value =>{
+          if (value == true){
+            swal({
+            title: 'Hello',
+            text:'You must get happiness in your life ',
+            icon:'success',
+            buttons:['Okay','Probability?'],
+            dangerMode:true
+        }).then(value =>{
+          swal({
+            title: 'You know that',
+            text:'It is 100%',
+            icon:'success',
+            buttons:['Okay','NO'],
+            dangerMode:true
+        }).then(value=>{
+        if(value == true){
+          swal({
+            title: 'Ohho',
+            text:'You are lying',
+            icon:'info',
+            buttons:['Yes','Yes'],
+            dangerMode:true
+        })
+        }else{
+        alert('okay')
+        }
+        })
+        })
+          }else{
+            swal({
+            title: 'sorry',
+            text:'That was rude',
+            icon:'info',
+            buttons:['No','Yes'],
+            dangerMode:true
+        })
+          }
+        })
+          }else{
+            swal({
+            title: 'Assalamu Alaikum',
+            text:'This thing is not for you. Please leave',
+            icon:'error',
+            buttons:['Sorry','Okay'],
+            dangerMode:true
+        })
+          }
+        })
+        var marq = document.getElementById('mar');
+        setInterval(value =>{
+            marq.style.backgroundColor = 'green';
+            marq.style.color = 'white';
+        },2000);
+
+        setInterval(value =>{
+            marq.style.backgroundColor = 'blue';
+            marq.style.color = 'white';
+        },3000);
+
+    </script>
 
 </body>
 </html>
